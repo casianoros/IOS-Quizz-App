@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz_Application_For_IOS_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,130 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP4-ZE-Y5Z">
+                                <rect key="frame" x="16" y="57" width="343" height="142"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-Z0-hu8">
+                                <rect key="frame" x="16" y="259" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.0010313478113762597" green="0.80974472870456915" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="4iA-kU-t5M"/>
+                                    <constraint firstAttribute="height" constant="42" id="OC2-T1-Wvg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odx-CJ-v3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EE-4p-IK7">
+                                <rect key="frame" x="16" y="309" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.001031347811" green="0.80974472870000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="3J0-Qo-iGV"/>
+                                    <constraint firstAttribute="width" constant="343" id="Y5Y-t7-ica"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kVM-8U-zwz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-00-jmC">
+                                <rect key="frame" x="16" y="359" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.001031347811" green="0.80974472870000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="mBu-rb-8RR"/>
+                                    <constraint firstAttribute="width" constant="343" id="mRK-sm-glr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZD-TT-KFx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czk-pa-xSh">
+                                <rect key="frame" x="16" y="409" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.001031347811" green="0.80974472870000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6hg-G3-pYc"/>
+                                    <constraint firstAttribute="width" constant="343" id="swM-4e-dXT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibP-FM-kNr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops Wrong !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vf-gq-sMK">
+                                <rect key="frame" x="16" y="489" width="343" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3cJ-E4-dWy"/>
+                                    <constraint firstAttribute="height" constant="109" id="iPE-sk-MWb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                <color key="textColor" red="0.89661326142131981" green="0.16845406689552128" blue="0.55926224929516954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2EE-4p-IK7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Fp-h3-F24"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3UK-ls-Y7n"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3s3-Bb-3mA"/>
+                            <constraint firstItem="4Vf-gq-sMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6JI-bp-27n"/>
+                            <constraint firstItem="IP4-ZE-Y5Z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="72N-Ex-CCl"/>
+                            <constraint firstItem="2EE-4p-IK7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HuQ-jM-aZY"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="top" secondItem="uGG-00-jmC" secondAttribute="bottom" constant="8" id="I2r-ym-lfH"/>
+                            <constraint firstItem="uGG-00-jmC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Iac-6q-tex"/>
+                            <constraint firstItem="uGG-00-jmC" firstAttribute="top" secondItem="2EE-4p-IK7" secondAttribute="bottom" constant="8" id="L1z-om-Qg2"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="top" secondItem="IP4-ZE-Y5Z" secondAttribute="bottom" constant="61" id="LgI-36-lSe"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lhh-Le-H4r"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lkt-b2-Xm1"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OAP-VT-Zsp"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="top" secondItem="IP4-ZE-Y5Z" secondAttribute="bottom" constant="61" id="W19-Bs-hVZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="czk-pa-xSh" secondAttribute="bottom" constant="216" id="YH6-Fd-B0Q"/>
+                            <constraint firstItem="uGG-00-jmC" firstAttribute="top" secondItem="2EE-4p-IK7" secondAttribute="bottom" constant="8" id="bHR-xf-fin"/>
+                            <constraint firstItem="4Vf-gq-sMK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cN4-l4-nH7"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="top" secondItem="IP4-ZE-Y5Z" secondAttribute="bottom" constant="61" id="dTY-pO-qRv"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dUN-7V-Cd6"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="top" secondItem="uGG-00-jmC" secondAttribute="bottom" constant="8" id="dd7-Ul-ny4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="czk-pa-xSh" secondAttribute="bottom" constant="216" id="gUn-r3-r4L"/>
+                            <constraint firstItem="IP4-ZE-Y5Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="iHF-Jv-W7x"/>
+                            <constraint firstItem="4Vf-gq-sMK" firstAttribute="top" secondItem="czk-pa-xSh" secondAttribute="bottom" constant="38" id="kNf-8h-krN"/>
+                            <constraint firstItem="2EE-4p-IK7" firstAttribute="top" secondItem="lfx-Z0-hu8" secondAttribute="bottom" constant="8" id="l0u-d5-A8R"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oNQ-NJ-9Bp"/>
+                            <constraint firstItem="IP4-ZE-Y5Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oxP-2T-3xo"/>
+                            <constraint firstItem="lfx-Z0-hu8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tp9-Bv-GQC"/>
+                            <constraint firstItem="czk-pa-xSh" firstAttribute="top" secondItem="uGG-00-jmC" secondAttribute="bottom" constant="8" id="tr2-5P-Piv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Vf-gq-sMK" secondAttribute="bottom" constant="69" id="vtL-xY-t2H"/>
+                            <constraint firstItem="uGG-00-jmC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wBQ-Ul-I8H"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="QLabel" destination="IP4-ZE-Y5Z" id="oH5-sU-mwu"/>
+                        <outlet property="lblWrong" destination="4Vf-gq-sMK" id="6Ub-8o-gbL"/>
+                        <outletCollection property="Buttons" destination="lfx-Z0-hu8" collectionClass="NSMutableArray" id="O5X-JO-bqI"/>
+                        <outletCollection property="Buttons" destination="2EE-4p-IK7" collectionClass="NSMutableArray" id="C22-NM-4hZ"/>
+                        <outletCollection property="Buttons" destination="uGG-00-jmC" collectionClass="NSMutableArray" id="VGd-XE-r7W"/>
+                        <outletCollection property="Buttons" destination="czk-pa-xSh" collectionClass="NSMutableArray" id="Ctd-Mj-Ywq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
